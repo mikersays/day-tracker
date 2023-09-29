@@ -1,0 +1,60 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+#timeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+.timeCell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top: 1.5px solid #000;
+    border-left: 1.5px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    text-align: center;
+}
+
+.red-highlight {
+    background-color: red !important;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+#progressContainer {
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#progressBar {
+    height: 30px;
+    width: 0%;
+    background-color: #76c7c0;
+    text-align: center;
+    line-height: 30px;
+    color: white
